@@ -7,6 +7,9 @@ def hello_t(array)
   end
 end
 
+#the yield is a anonymous function callback taht you are passing to your
+#original array that do part starts the anonymous
+#function
 hello_t(['Tim', 'Tom', "Jim"]) do
   |name|
   if name.starts_with?('T')
