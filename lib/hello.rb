@@ -12,7 +12,7 @@ end
 #function
 hello_t(['Tim', 'Tom', "Jim"]) do
   |name|
-  if name.starts_with?('T')
+  if name.start_with?('T')
     puts "Hi, #{name}"
   end
 end
