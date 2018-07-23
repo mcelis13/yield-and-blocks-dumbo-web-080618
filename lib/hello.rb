@@ -1,12 +1,16 @@
 def hello_t(array)
-  i = 0
+  if block_given?
+    i = 0
 
-  while i < array.length
-    yield(array[i])
-    i += 1
+    while i < array.length
+      yield(array[i])
+      i += 1
+    end
+    
+  array
+  else
+    puts "Hey! No block was given"
   end
-
-  return array
 end
 
 #the yield is a anonymous function callback taht you are passing to your
