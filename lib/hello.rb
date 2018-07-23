@@ -5,6 +5,8 @@ def hello_t(array)
     yield array[i]
     i += 1
   end
+
+  array
 end
 
 #the yield is a anonymous function callback taht you are passing to your
